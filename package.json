@@ -1,0 +1,50 @@
+{
+  "name": "@kenchan0130/babel-preset-google-apps-script",
+  "version": "0.1.0",
+  "description": "Babel preset for all Goolge Apps Script.",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenchan0130/babel-preset-google-apps-script.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kenchan0130/babel-preset-google-apps-script/issues"
+  },
+  "homepage": "https://github.com/kenchan0130/babel-preset-google-apps-script",
+  "author": "Tadayuki Onishi<tt.tanishi100@gmail.com>",
+  "keywords": [
+    "babel-preset",
+    "Google Apps Script"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --max-warnings=0 src/"
+  },
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.0.0",
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
+    "@babel/plugin-transform-block-scoped-functions": "^7.2.0",
+    "@babel/plugin-transform-block-scoping": "^7.4.4",
+    "@babel/plugin-transform-classes": "^7.4.4",
+    "@babel/plugin-transform-computed-properties": "^7.2.0",
+    "@babel/plugin-transform-destructuring": "^7.4.4",
+    "@babel/plugin-transform-duplicate-keys": "^7.2.0",
+    "@babel/plugin-transform-exponentiation-operator": "^7.2.0",
+    "@babel/plugin-transform-for-of": "^7.4.4",
+    "@babel/plugin-transform-function-name": "^7.4.4",
+    "@babel/plugin-transform-literals": "^7.2.0",
+    "@babel/plugin-transform-member-expression-literals": "^7.2.0",
+    "@babel/plugin-transform-object-super": "^7.2.0",
+    "@babel/plugin-transform-parameters": "^7.4.4",
+    "@babel/plugin-transform-property-literals": "^7.2.0",
+    "@babel/plugin-transform-shorthand-properties": "^7.2.0",
+    "@babel/plugin-transform-spread": "^7.2.2",
+    "@babel/plugin-transform-template-literals": "^7.4.4",
+    "@babel/plugin-transform-unicode-regex": "^7.4.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "eslint": "^5.16.0"
+  }
+}
