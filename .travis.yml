@@ -15,6 +15,7 @@ jobs:
     - stage: deploy
       node_js: "12"
       if: tag IS present
+      script: true # overwrite default build script ref: https://docs.travis-ci.com/user/languages/javascript-with-nodejs/#default-build-script
       deploy:
         provider: npm
         skip_cleanup: true
