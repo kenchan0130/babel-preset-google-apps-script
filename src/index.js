@@ -17,7 +17,7 @@ import transformShorthandProperties from "@babel/plugin-transform-shorthand-prop
 import transformSpread from "@babel/plugin-transform-spread";
 import transformTemplateLiterals from "@babel/plugin-transform-template-literals";
 import transformUnicodeRegex from "@babel/plugin-transform-unicode-regex";
-import transformEs3MemberExpressionLiterals from "babel-plugin-transform-es3-property-literals";
+import transformEs3MemberExpressionLiterals from "babel-plugin-transform-es3-member-expression-literals";
 import transformEs3PropertyLiterals from "babel-plugin-transform-es3-property-literals";
 
 export default declare(api => {
