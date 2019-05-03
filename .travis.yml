@@ -6,6 +6,7 @@ jobs:
     - &test
       stage: test
       node_js: "12"
+      if: tag IS blank
       script:
         - npm run lint
     - <<: *test
