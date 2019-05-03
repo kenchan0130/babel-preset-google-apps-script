@@ -14,6 +14,7 @@ jobs:
       node_js: "8"
     - stage: deploy
       node_js: "12"
+      if: tag IS present
       deploy:
         provider: npm
         skip_cleanup: true
