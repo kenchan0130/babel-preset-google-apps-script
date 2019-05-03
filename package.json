@@ -19,7 +19,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint --max-warnings=0 src/",
-    "preversion": "[ \"$(git symbolic-ref --short HEAD)\" != master ] || [ -n \"$(git status --porcelain)\" ] && exit 1",
+    "preversion": "[ \"$(git symbolic-ref --short HEAD)\" != master ] || [ -n \"$(git status --porcelain)\" ] && exit 1 || true",
     "postversion": "git push origin $(git describe --abbrev=0 --tags)"
   },
   "dependencies": {
