@@ -9,7 +9,7 @@ jobs:
       if: tag IS blank
       script:
         - npm run lint
-        - npm run build
+        - npm run test
     - <<: *test
       node_js: "10"
     - <<: *test
