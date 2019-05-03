@@ -68,6 +68,18 @@ require("@babel/core").transform("code", {
 });
 ```
 
+## Development
+
+### Release
+
+Run
+
+```sh
+npm version major|minor|patch
+```
+
+with local master branch.
+
 ## License
 
 MIT
