@@ -11,14 +11,14 @@ import transformExponentiationPperator from "@babel/plugin-transform-exponentiat
 import transformForOf from "@babel/plugin-transform-for-of";
 import transformFunctionName from "@babel/plugin-transform-function-name";
 import transformLiterals from "@babel/plugin-transform-literals";
-import transformMemberExpressionLiterals from "@babel/plugin-transform-member-expression-literals";
 import transformObjectSuper from "@babel/plugin-transform-object-super";
 import transformParameters from "@babel/plugin-transform-parameters";
-import transformPropertyLiterals from "@babel/plugin-transform-property-literals";
 import transformShorthandProperties from "@babel/plugin-transform-shorthand-properties";
 import transformSpread from "@babel/plugin-transform-spread";
 import transformTemplateLiterals from "@babel/plugin-transform-template-literals";
 import transformUnicodeRegex from "@babel/plugin-transform-unicode-regex";
+import transformEs3MemberExpressionLiterals from "babel-plugin-transform-es3-property-literals";
+import transformEs3PropertyLiterals from "babel-plugin-transform-es3-property-literals";
 
 export default declare(api => {
   api.assertVersion(7);
@@ -35,14 +35,14 @@ export default declare(api => {
       transformForOf,
       transformFunctionName,
       transformLiterals,
-      transformMemberExpressionLiterals,
       transformObjectSuper,
       transformParameters,
-      transformPropertyLiterals,
       transformShorthandProperties,
       transformSpread,
       transformTemplateLiterals,
-      transformUnicodeRegex
+      transformUnicodeRegex,
+      transformEs3MemberExpressionLiterals,
+      transformEs3PropertyLiterals
     ]
   };
 });

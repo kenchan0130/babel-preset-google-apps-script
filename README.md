@@ -19,14 +19,14 @@ This preset includes the following plugins:
 - [@babel/plugin-transform-for-of](https://babeljs.io/docs/en/babel-plugin-transform-for-of)
 - [@babel/plugin-transform-function-name](https://babeljs.io/docs/en/babel-plugin-transform-function-name)
 - [@babel/plugin-transform-literals](https://babeljs.io/docs/en/babel-plugin-transform-literals)
-- [@babel/plugin-transform-member-expression-literals](https://babeljs.io/docs/en/babel-plugin-transform-member-expression-literals)
 - [@babel/plugin-transform-object-super](https://babeljs.io/docs/en/babel-plugin-transform-object-super)
 - [@babel/plugin-transform-parameters](https://babeljs.io/docs/en/babel-plugin-transform-parameters)
-- [@babel/plugin-transform-property-literals](https://babeljs.io/docs/en/babel-plugin-transform-property-literals)
 - [@babel/plugin-transform-shorthand-properties](https://babeljs.io/docs/en/babel-plugin-transform-shorthand-properties)
 - [@babel/plugin-transform-spread](https://babeljs.io/docs/en/babel-plugin-transform-spread)
 - [@babel/plugin-transform-template-literals](https://babeljs.io/docs/en/babel-plugin-transform-template-literals)
 - [@babel/plugin-transform-unicode-regex](https://babeljs.io/docs/en/babel-plugin-transform-unicode-regex)
+- [babel-plugin-transform-es3-member-expression-literals](https://babeljs.io/docs/en/babel-plugin-transform-es3-member-expression-literals)
+- [babel-plugin-transform-es3-property-literals](https://babeljs.io/docs/en/babel-plugin-transform-es3-property-literals)
 
 ## Installation
 
