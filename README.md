@@ -6,7 +6,15 @@
 
 Babel preset for all Goolge Apps Script.
 
-This preset includes the following plugins:
+## Used plugins
+This preset includes the following plugins.
+
+### ES3
+
+- [babel-plugin-transform-es3-member-expression-literals](https://babeljs.io/docs/en/babel-plugin-transform-es3-member-expression-literals)
+- [babel-plugin-transform-es3-property-literals](https://babeljs.io/docs/en/babel-plugin-transform-es3-property-literals)
+
+### ES2015
 
 - [@babel/plugin-transform-arrow-functions](https://babeljs.io/docs/en/babel-plugin-transform-arrow-functions)
 - [@babel/plugin-transform-block-scoped-functions](https://babeljs.io/docs/en/babel-plugin-transform-block-scoped-functions)
@@ -15,7 +23,6 @@ This preset includes the following plugins:
 - [@babel/plugin-transform-computed-properties](https://babeljs.io/docs/en/next/babel-plugin-transform-computed-properties)
 - [@babel/plugin-transform-destructuring](https://babeljs.io/docs/en/babel-plugin-transform-destructuring)
 - [@babel/plugin-transform-duplicate-keys](https://babeljs.io/docs/en/babel-plugin-transform-duplicate-keys)
-- [@babel/plugin-transform-exponentiation-operator](https://babeljs.io/docs/en/babel-plugin-transform-exponentiation-operator)
 - [@babel/plugin-transform-for-of](https://babeljs.io/docs/en/babel-plugin-transform-for-of)
 - [@babel/plugin-transform-function-name](https://babeljs.io/docs/en/babel-plugin-transform-function-name)
 - [@babel/plugin-transform-literals](https://babeljs.io/docs/en/babel-plugin-transform-literals)
@@ -25,8 +32,10 @@ This preset includes the following plugins:
 - [@babel/plugin-transform-spread](https://babeljs.io/docs/en/babel-plugin-transform-spread)
 - [@babel/plugin-transform-template-literals](https://babeljs.io/docs/en/babel-plugin-transform-template-literals)
 - [@babel/plugin-transform-unicode-regex](https://babeljs.io/docs/en/babel-plugin-transform-unicode-regex)
-- [babel-plugin-transform-es3-member-expression-literals](https://babeljs.io/docs/en/babel-plugin-transform-es3-member-expression-literals)
-- [babel-plugin-transform-es3-property-literals](https://babeljs.io/docs/en/babel-plugin-transform-es3-property-literals)
+
+### ES2016
+
+- [@babel/plugin-transform-exponentiation-operator](https://babeljs.io/docs/en/babel-plugin-transform-exponentiation-operator)
 
 ## Installation
 
@@ -67,6 +76,15 @@ require("@babel/core").transform("code", {
   plugins: ["@kenchan0130/babel-preset-google-apps-script"]
 });
 ```
+
+## References
+
+- https://github.com/eiel/babel-preset-google-apps-script
+  - Babel preset for Google Apps Script (not updated)
+  - Using legacy presets
+- https://github.com/fossamagna/babel-preset-gas
+  - Babel preset for all Goolge Apps Script plugins
+  - Insufficient import of preset
 
 ## Development
 
