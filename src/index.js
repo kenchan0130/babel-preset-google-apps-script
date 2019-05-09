@@ -7,7 +7,7 @@ import transformClasses from "@babel/plugin-transform-classes";
 import transformComputedProperties from "@babel/plugin-transform-computed-properties";
 import transformDestructuring from "@babel/plugin-transform-destructuring";
 import transformDuplicateKeys from "@babel/plugin-transform-duplicate-keys";
-import transformExponentiationPperator from "@babel/plugin-transform-exponentiation-operator";
+import transformExponentiationOperator from "@babel/plugin-transform-exponentiation-operator";
 import transformForOf from "@babel/plugin-transform-for-of";
 import transformFunctionName from "@babel/plugin-transform-function-name";
 import transformLiterals from "@babel/plugin-transform-literals";
@@ -31,7 +31,7 @@ export default declare(api => {
       transformComputedProperties,
       transformDestructuring,
       transformDuplicateKeys,
-      transformExponentiationPperator,
+      transformExponentiationOperator,
       transformForOf,
       transformFunctionName,
       transformLiterals,
