@@ -3,7 +3,13 @@ module.exports = {
     es6: true,
     node: true
   },
-  extends: "eslint:recommended",
+  plugins: [
+    "security"
+  ],
+  extends: [
+    "eslint:recommended",
+    "plugin:security/recommended"
+  ],
   parserOptions: {
     sourceType: "module"
   }
