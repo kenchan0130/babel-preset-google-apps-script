@@ -53,6 +53,7 @@
     "@babel/helper-plugin-test-runner": "^7.1.0",
     "@babel/preset-env": "^7.4.4",
     "eslint": "^6.0.1",
+    "eslint-plugin-security": "^1.4.0",
     "jest": "^24.7.1"
   },
   "publishConfig": {
