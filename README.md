@@ -6,7 +6,12 @@
 
 Babel preset for all Goolge Apps Script.
 
+## Requiredment
+
+- Babel version 7
+
 ## Used plugins
+
 This preset includes the following plugins.
 
 ### ES3
