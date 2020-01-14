@@ -45,6 +45,7 @@ This preset includes the following plugins.
 ### ES2018
 
 - [@babel/plugin-proposal-object-rest-spread](https://babeljs.io/docs/en/babel-plugin-proposal-object-rest-spread)
+- [@babel/plugin-transform-dotall-regex](https://babeljs.io/docs/en/babel-plugin-transform-dotall-regex)
 
 ## Installation
 
