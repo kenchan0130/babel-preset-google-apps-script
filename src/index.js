@@ -26,6 +26,7 @@ import transformExponentiationOperator from "@babel/plugin-transform-exponentiat
 // ES2018
 import proposalObjectRestSpread from "@babel/plugin-proposal-object-rest-spread";
 import transformDotallRegex from "@babel/plugin-transform-dotall-regex";
+import proposalUnicodePropertyRegex from "@babel/plugin-proposal-unicode-property-regex";
 
 export default declare(api => {
   api.assertVersion(7);
@@ -55,7 +56,8 @@ export default declare(api => {
       transformExponentiationOperator,
       // ES2018
       proposalObjectRestSpread,
-      transformDotallRegex
+      transformDotallRegex,
+      proposalUnicodePropertyRegex
     ]
   };
 });
