@@ -46,6 +46,7 @@ This preset includes the following plugins.
 
 - [@babel/plugin-proposal-object-rest-spread](https://babeljs.io/docs/en/babel-plugin-proposal-object-rest-spread)
 - [@babel/plugin-transform-dotall-regex](https://babeljs.io/docs/en/babel-plugin-transform-dotall-regex)
+- [@babel/plugin-proposal-unicode-property-regex](https://babeljs.io/docs/en/babel-plugin-proposal-unicode-property-regex)
 
 ## Installation
 
