@@ -1,5 +1,10 @@
 "use strict";
 import { declare } from "@babel/helper-plugin-utils";
+
+ // ES3
+import transformEs3MemberExpressionLiterals from "babel-plugin-transform-es3-member-expression-literals";
+import transformEs3PropertyLiterals from "babel-plugin-transform-es3-property-literals";
+// ES2015
 import transformArrowFunctions from "@babel/plugin-transform-arrow-functions";
 import transformBlockScopedFunctions from "@babel/plugin-transform-block-scoped-functions";
 import transformBlockScoping from "@babel/plugin-transform-block-scoping";
@@ -7,7 +12,6 @@ import transformClasses from "@babel/plugin-transform-classes";
 import transformComputedProperties from "@babel/plugin-transform-computed-properties";
 import transformDestructuring from "@babel/plugin-transform-destructuring";
 import transformDuplicateKeys from "@babel/plugin-transform-duplicate-keys";
-import transformExponentiationOperator from "@babel/plugin-transform-exponentiation-operator";
 import transformForOf from "@babel/plugin-transform-for-of";
 import transformFunctionName from "@babel/plugin-transform-function-name";
 import transformLiterals from "@babel/plugin-transform-literals";
@@ -17,13 +21,19 @@ import transformShorthandProperties from "@babel/plugin-transform-shorthand-prop
 import transformSpread from "@babel/plugin-transform-spread";
 import transformTemplateLiterals from "@babel/plugin-transform-template-literals";
 import transformUnicodeRegex from "@babel/plugin-transform-unicode-regex";
-import transformEs3MemberExpressionLiterals from "babel-plugin-transform-es3-member-expression-literals";
-import transformEs3PropertyLiterals from "babel-plugin-transform-es3-property-literals";
+// ES2016
+import transformExponentiationOperator from "@babel/plugin-transform-exponentiation-operator";
+// ES2018
+import proposalObjectRestSpread from "@babel/plugin-proposal-object-rest-spread";
 
 export default declare(api => {
   api.assertVersion(7);
   return {
     plugins: [
+      // ES3
+      transformEs3MemberExpressionLiterals,
+      transformEs3PropertyLiterals,
+      // ES2015
       transformArrowFunctions,
       transformBlockScopedFunctions,
       transformBlockScoping,
@@ -31,7 +41,6 @@ export default declare(api => {
       transformComputedProperties,
       transformDestructuring,
       transformDuplicateKeys,
-      transformExponentiationOperator,
       transformForOf,
       transformFunctionName,
       transformLiterals,
@@ -41,8 +50,10 @@ export default declare(api => {
       transformSpread,
       transformTemplateLiterals,
       transformUnicodeRegex,
-      transformEs3MemberExpressionLiterals,
-      transformEs3PropertyLiterals
+      // ES2016
+      transformExponentiationOperator,
+      // ES2018
+      proposalObjectRestSpread
     ]
   };
 });

@@ -42,6 +42,10 @@ This preset includes the following plugins.
 
 - [@babel/plugin-transform-exponentiation-operator](https://babeljs.io/docs/en/babel-plugin-transform-exponentiation-operator)
 
+### ES2018
+
+- [@babel/plugin-proposal-object-rest-spread](https://babeljs.io/docs/en/babel-plugin-proposal-object-rest-spread)
+
 ## Installation
 
 Using npm:
