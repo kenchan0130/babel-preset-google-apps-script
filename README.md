@@ -99,15 +99,21 @@ require("@babel/core").transform("code", {
 
 ## Development
 
-### Release
+### Test
 
-Run
+```sh
+npm run test
+```
+
+All you need to know is that the transforms are reflected.
+
+### Release
 
 ```sh
 npm version major|minor|patch
 ```
 
-with local master branch.
+Run the command with local master branch.
 
 ## License
 
