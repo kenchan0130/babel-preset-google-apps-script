@@ -20,7 +20,7 @@
   "scripts": {
     "lint": "eslint --max-warnings=0 src/",
     "build": "babel src/ -d dist/",
-    "pretest": "npm run build",
+    "pretest": "rm -rf dist/ && npm run build",
     "test": "jest",
     "preversion": "[ \"$(git symbolic-ref --short HEAD)\" != master ] || [ -n \"$(git status --porcelain)\" ] && exit 1 || true",
     "postversion": "git push origin $(git describe --abbrev=0 --tags) && git push origin master"
