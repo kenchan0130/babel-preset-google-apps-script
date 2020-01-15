@@ -21,7 +21,7 @@
     "lint": "eslint --max-warnings=0 src/",
     "build": "babel src/ -d dist/",
     "pretest": "rm -rf dist/ && npm run build",
-    "test": "jest",
+    "test": "require-self && jest",
     "preversion": "[ \"$(git symbolic-ref --short HEAD)\" != master ] || [ -n \"$(git status --porcelain)\" ] && exit 1 || true",
     "postversion": "git push origin $(git describe --abbrev=0 --tags) && git push origin master"
   },
@@ -57,7 +57,8 @@
     "@babel/preset-env": "^7.8.3",
     "eslint": "^6.0.1",
     "eslint-plugin-security": "^1.4.0",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "require-self": "^0.2.1"
   },
   "publishConfig": {
     "access": "public"
