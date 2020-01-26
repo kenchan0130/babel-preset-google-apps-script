@@ -29,6 +29,7 @@ import transformDotallRegex from "@babel/plugin-transform-dotall-regex";
 import proposalUnicodePropertyRegex from "@babel/plugin-proposal-unicode-property-regex";
 // Polyfill
 import transformRuntime from "@babel/plugin-transform-runtime";
+import runtimCorejs3Package from "@babel/runtime-corejs3/package.json";
 
 const transformRuntimeCoreJsWraper = (0, declare)((api, options, dirname) => {
   const corejsVersion = 3;
@@ -37,7 +38,7 @@ const transformRuntimeCoreJsWraper = (0, declare)((api, options, dirname) => {
     Object.assign(
       {
         corejs: corejsVersion,
-        version: "7.8.3"
+        version: runtimCorejs3Package.version
       },
       options || {}
     ),
