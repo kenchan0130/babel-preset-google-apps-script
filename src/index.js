@@ -1,7 +1,7 @@
 "use strict";
 import { declare } from "@babel/helper-plugin-utils";
 
- // ES3
+// ES3
 import transformEs3MemberExpressionLiterals from "babel-plugin-transform-es3-member-expression-literals";
 import transformEs3PropertyLiterals from "babel-plugin-transform-es3-property-literals";
 // ES2015
@@ -27,6 +27,23 @@ import transformExponentiationOperator from "@babel/plugin-transform-exponentiat
 import proposalObjectRestSpread from "@babel/plugin-proposal-object-rest-spread";
 import transformDotallRegex from "@babel/plugin-transform-dotall-regex";
 import proposalUnicodePropertyRegex from "@babel/plugin-proposal-unicode-property-regex";
+// Polyfill
+import transformRuntime from "@babel/plugin-transform-runtime";
+
+const transformRuntimeCoreJsWraper = (0, declare)((api, options, dirname) => {
+  const corejsVersion = 3;
+  return transformRuntime(
+    api,
+    Object.assign(
+      {
+        corejs: corejsVersion,
+        version: "7.8.3"
+      },
+      options || {}
+    ),
+    dirname
+  );
+});
 
 export default declare(api => {
   api.assertVersion(7);
@@ -57,7 +74,9 @@ export default declare(api => {
       // ES2018
       proposalObjectRestSpread,
       transformDotallRegex,
-      proposalUnicodePropertyRegex
+      proposalUnicodePropertyRegex,
+      // Polyfill
+      transformRuntimeCoreJsWraper
     ]
   };
 });
