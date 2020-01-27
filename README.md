@@ -4,7 +4,7 @@
 
 # babel-preset-google-apps-script
 
-Babel preset for all Goolge Apps Script.
+Babel syntax preset for all Goolge Apps Script.
 
 ## Requiredment
 
@@ -86,6 +86,65 @@ babel --presets @kenchan0130/babel-preset-google-apps-script script.js
 require("@babel/core").transform("code", {
   plugins: ["@kenchan0130/babel-preset-google-apps-script"]
 });
+```
+
+## Polyfill
+
+This library does not include polyfill.
+If you want to use it, I recommend using [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env).
+
+### Case webpack
+
+First, install the required dependencies for polyfill.
+
+```sh
+npm i -D core-js/stable regenerator-runtime/runtime @babel/preset-env core-js@3
+```
+
+And set `webpack.config.js` as follows.
+
+```js
+const path = require('path');
+const GasPlugin = require("gas-webpack-plugin"); // Define functions at the top level
+
+module.exports = {
+  mode: 'none', // Prevent minify
+  entry: [
+    "core-js/stable",
+    "regenerator-runtime/runtime",
+    path.resolve(__dirname, 'src', 'index.js')
+  ],
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'out.js',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: {
+          loader: "babel-loader",
+          query: {
+            presets: [
+                [
+                  "@babel/preset-env", {
+                    useBuiltIns: "entry",
+                    corejs: 3
+                  }
+                ],
+                [
+                  '@kenchan0130/babel-preset-google-apps-script'
+                ]
+            ]
+          }
+        }
+      }
+    ]
+  },
+  plugins: [
+    new GasPlugin()
+  ]
+};
 ```
 
 ## References
