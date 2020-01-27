@@ -48,11 +48,6 @@ This preset includes the following plugins.
 - [@babel/plugin-transform-dotall-regex](https://babeljs.io/docs/en/babel-plugin-transform-dotall-regex)
 - [@babel/plugin-proposal-unicode-property-regex](https://babeljs.io/docs/en/babel-plugin-proposal-unicode-property-regex)
 
-### Polyfill
-
-- [@babel/plugin-transform-runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime)
-  - Using [core-js](https://github.com/zloirock/core-js) version 3
-
 ## Installation
 
 Using npm:
