@@ -6,6 +6,18 @@
 
 Babel syntax preset for all Goolge Apps Script.
 
+## Announcement
+
+If you are going to create a new Google Apps Script app with babel, I **do not recommend using** this preset.
+
+Google has announced [support for V8 as the runtime engine for Google Apps Script](https://developers.google.com/apps-script/guides/v8-runtime).
+V8, Google Apps Script JavaScript runtime, supports the latest ECMAScript syntax, so you don't need to use this preset.
+
+### Future plan
+
+Until the V8 runtime becomes stable, I will keep maintaining this project.
+And I will archive this repository when the time comes.
+
 ## Requiredment
 
 - Babel version 7
