@@ -17,6 +17,12 @@
     "Google Apps Script"
   ],
   "license": "MIT",
+  "files": [
+    "dist",
+    "LICENCE",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "lint": "eslint --max-warnings=0 src/",
     "lint:fix": "eslint --fix src/",
