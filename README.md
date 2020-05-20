@@ -1,5 +1,5 @@
 [![npm version](https://badge.fury.io/js/%40kenchan0130%2Fbabel-preset-google-apps-script.svg)](https://badge.fury.io/js/%40kenchan0130%2Fbabel-preset-google-apps-script)
-[![Build Status](https://travis-ci.org/kenchan0130/babel-preset-google-apps-script.svg?branch=master)](https://travis-ci.org/kenchan0130/babel-preset-google-apps-script)
+[![Build Status](https://github.com/kenchan0130/babel-preset-google-apps-script/workflows/Node.js%20CI/badge.svg)](https://github.com/kenchan0130/babel-preset-google-apps-script/actions?query=workflow%3A%22Node.js+CI%22)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # babel-preset-google-apps-script
