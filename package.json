@@ -19,6 +19,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint --max-warnings=0 src/",
+    "lint:fix": "eslint --fix src/",
     "build": "babel src/ -d dist/",
     "pretest": "rm -rf dist/ && npm run build",
     "test": "require-self && jest",
@@ -56,8 +57,12 @@
     "@babel/helper-plugin-test-runner": "latest",
     "@babel/preset-env": "latest",
     "eslint": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-jest": "latest",
+    "eslint-plugin-prettier": "latest",
     "eslint-plugin-security": "latest",
     "jest": "latest",
+    "prettier": "latest",
     "require-self": "latest"
   },
   "publishConfig": {
