@@ -1,16 +1,20 @@
 module.exports = {
+  extends: ["eslint:recommended", "plugin:prettier/recommended"],
+  plugins: ["prettier", "jest"],
   env: {
+    node: true,
     es6: true,
-    node: true
+    "jest/globals": true,
   },
-  plugins: [
-    "security"
-  ],
-  extends: [
-    "eslint:recommended",
-    "plugin:security/recommended"
-  ],
   parserOptions: {
-    sourceType: "module"
-  }
+    sourceType: "module",
+  },
+  rules: {
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
+  },
 };
