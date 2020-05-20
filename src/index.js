@@ -28,7 +28,7 @@ import proposalObjectRestSpread from "@babel/plugin-proposal-object-rest-spread"
 import transformDotallRegex from "@babel/plugin-transform-dotall-regex";
 import proposalUnicodePropertyRegex from "@babel/plugin-proposal-unicode-property-regex";
 
-export default declare(api => {
+export default declare((api) => {
   api.assertVersion(7);
   return {
     plugins: [
@@ -57,7 +57,7 @@ export default declare(api => {
       // ES2018
       proposalObjectRestSpread,
       transformDotallRegex,
-      proposalUnicodePropertyRegex
-    ]
+      proposalUnicodePropertyRegex,
+    ],
   };
 });
