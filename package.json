@@ -1,6 +1,6 @@
 {
   "name": "@kenchan0130/babel-preset-google-apps-script",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "description": "Babel preset for all Goolge Apps Script.",
   "main": "dist/index.js",
   "repository": {
